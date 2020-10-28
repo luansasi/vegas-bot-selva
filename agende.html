@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Vegas Bot</title>
+    <meta name="description" content="Os Melhores vinhos do Brasil">
+    <meta name="keywords" content="vinho, vinho artesanal">
+    <meta name="author" content="Luan dos Santos da Silva">
+    <meta name="reply-to" content="santosluan09@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="estilosf.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div id="nome" class="col-sm-4">
+            <h1>Vegas Bot</h1>
+        </div>
+        <div id="contato" class="col-sm-4">
+        </div>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li> <a href="index.html">Cassino Copa</a> </li>
+        <li><a href="agende.html">Bet365</a> </li>
+    </ul>
+</nav>
+<hr>
+
+<article>
+    <fieldset>
+        <legend>Dados de Entrega</legend>
+
+        <form>
+            <p><label for="estrategia"> Estratégia </label>
+                <input type="text" id="estrategia" list="estrategias" required>
+                <datalist id="estrategias">
+                    <option value="MILIONÁRIA"></option>
+                    <option value="SPEED CASH"></option>
+                    <option value="KAMIKAZE"></option>
+                </datalist></P>
+            </p>
+            <P> <label for="sequencia">Sequencia</label>
+                <input type="text" id="sequencia"  list="sequencias" required>
+                <datalist id="sequencias">
+                    <option value="VERMELHO"></option>
+                    <option value="PRETO"></option>
+                    <option value="MAIORES"></option>
+                    <option value="MENORES"></option>
+                    <option value="MENORES 1° DÚZIA"></option>
+                    <option value="MAIORES 3° DÚZIA"></option>
+                </datalist>
+            </P>
+            <P> <label for="number">Número</label>
+                <input type="text" id="number"  list="numbers" required>
+                <datalist id="numbers">
+                    <option value="9"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                    <option value="50"></option>
+                    <option value="70"></option>
+                </datalist>
+            </P>
+            <P> <label for="f_casa">Casa de Aposta</label>
+                <input type="text" id="cs_aposta" list="casa_aposta" required>
+                <datalist id="casa_aposta">
+                    <option value="AGE OF THE GODS ROULETTE"></option>
+                    <option value="AMERICAN ROULETTE"></option>
+                    <option value="BET365"></option>
+                    <option value="BET365 PREMIUM ROULETTE"></option>
+                    <option value="DEUTSCHES ROULETTE"></option>
+                    <option value="DIAMOND ROULETTE"></option>
+                    <option value="FOOTBALL ROULETTE"></option>
+                    <option value="PEARL ROULETTE"></option>
+                    <option value="PHOENIX ROULETTE"></option>
+                    <option value="PRESTIGE ROULETTE"></option>
+                    <option value="PRIME SLINGSHOT"></option>
+                    <option value="QUANTUM AUTO ROULETTE"></option>
+                    <option value="QUANTUM ROULETTE LIVE"></option>
+                    <option value="ROULETTE"></option>
+                    <option value="ROULETTE ITALIANA"></option>
+                    <option value="SLINGSHOT"></option>
+                    <option value="SPEED ROULETTE"></option>
+                    <option value="SPREAD BET ROULETTE"></option>
+                    <option value="TRIUMPH  ROULETTE"></option>
+                    <option value="UK ROULETTE"></option>
+                </datalist></P>
+            <p> <input type="button" id="mostrar" value="Mostrar">
+                <input type="reset" id="Limpar"> </p>
+        </form>
+    </fieldset>
+
+</article>
+
+<div class="textvegas">
+    <p id="respostaCopa"></p>
+</div>
+
+<script src="vegasBet365.js"></script>
+</body>
+
+</html>
